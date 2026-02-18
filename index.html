@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026.com.ar | Sellos de Goma Personalizados y Escolares</title>
+    <meta name="description" content="Líderes en fabricación de sellos de goma en Argentina. Sellos automáticos para profesionales, sellos de madera y kits escolares personalizados con tinta textil.">
+    <meta name="keywords" content="sellos de goma, sellos personalizados, 2026.com.ar, sellos escolares, sellos automáticos, sellos para ropa, sellos buenos aires">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-blue: #0056b3;
+            --whatsapp-green: #25d366;
+            --school-yellow: #ffc107;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        .hero-container {
+            position: relative;
+            height: 90vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                        url('https://images.unsplash.com/photo-1583417319070-4a69db38a482?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'); /* Imagen de respaldo */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: 800;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        /* Tarjetas de Producto */
+        .transition-hover {
+            transition: all 0.3s ease;
+            border-top: 5px solid transparent;
+        }
+        .transition-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+            border-top: 5px solid var(--primary-blue);
+        }
+
+        /* WhatsApp Flotante */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--whatsapp-green);
+            color: white;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+        .whatsapp-float:hover { transform: scale(1.1); color: white; }
+
+        /* FAQ Estilo */
+        .accordion-button:not(.collapsed) { background-color: #e7f1ff; color: var(--primary-blue); }
+        .accordion-item { border-radius: 10px !important; margin-bottom: 10px; border: 1px solid #eee; overflow: hidden; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">2026<span class="text-primary">.COM.AR</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kit-escolar">Kit Escolar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a href="https://wa.me/TUNUMERO" class="btn btn-outline-primary ms-3">WhatsApp</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-container">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center mb-3">
+                <img src="images/logo.png" alt="Logo 2026" style="height: 80px; width: auto;" class="me-3">
+                <h1 class="hero-title mb-0">Sellos que dejan huella.</h1>
+            </div>
+            <p class="lead fs-4 mb-4">Especialistas en sellos de goma para empresas y sellos escolares personalizados.</p>
+            <div class="d-grid gap-3 d-md-block">
+                <a href="#productos" class="btn btn-primary btn-lg px-5 py-3 fw-bold shadow">VER CATÁLOGO</a>
+                <a href="#contacto" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">CONTACTAR</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="productos" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold h1">Nuestros Productos</h2>
+                <div class="mx-auto bg-primary mb-3" style="width: 60px; height: 4px;"></div>
+                <p class="text-muted">Personalizá tu sello hoy mismo con la mejor tecnología.</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm transition-hover text-center p-4">
+                        <div class="text-primary mb-3"><i class="fas fa-print fa-3x"></i></div>
+                        <h4 class="fw-bold">Sellos Automáticos</h4>
+                        <p class="text-muted small">Prácticos y duraderos. El estándar para profesionales y oficinas.</p>
+                        <a href="#" class="btn btn-outline-primary mt-auto">Ver Modelos</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm transition-hover text-center p-4" style="border-top-color: var(--school-yellow) !important;">
+                        <div class="text-warning mb-3"><i class="fas fa-apple-alt fa-3x"></i></div>
+                        <h4 class="fw-bold">Sellos Escolares</h4>
+                        <p class="text-muted small">¡Identificá todo! Cuadernos, libros y etiquetas con estilo.</p>
+                        <a href="#" class="btn btn-outline-warning mt-auto">Ver Diseños</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm transition-hover text-center p-4">
+                        <div class="text-success mb-3"><i class="fas fa-tree fa-3x"></i></div>
+                        <h4 class="fw-bold">Sellos de Madera</h4>
+                        <p class="text-muted small">El toque artesanal y clásico para eventos o packaging.</p>
+                        <a href="#" class="btn btn-outline-success mt-auto">Ver Medidas</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kit-escolar" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center bg-white shadow rounded-4 overflow-hidden mx-0">
+                <div class="col-lg-6 p-0 bg-secondary" style="height: 400px; background: url('https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?auto=format&fit=crop&w=800&q=80') center/cover;"></div>
+                <div class="col-lg-6 p-5">
+                    <span class="badge bg-danger mb-2">MÁS VENDIDO</span>
+                    <h2 class="fw-bold mb-3">Kit Escolar 2026</h2>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 1 Sello automático personalizado</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Tinta textil resistente a lavados</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Almohadilla de repuesto incluida</li>
+                    </ul>
+                    <a href="https://wa.me/TUNUMERO?text=Hola%20quiero%20el%20Kit%20Escolar" class="btn btn-success btn-lg w-100 shadow">
+                        <i class="fab fa-whatsapp me-2"></i> CONSULTAR PRECIO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h2 class="fw-bold">Contactanos</h2>
+                    <p class="text-muted">Atención personalizada para particulares y empresas.</p>
+                    <p><i class="fas fa-envelope text-primary me-2"></i> info@2026.com.ar</p>
+                    <p><i class="fas fa-phone text-primary me-2"></i> +54 9 11 XXXX-XXXX</p>
+                    <div class="mt-4">
+                        <a href="#" class="btn btn-dark btn-sm rounded-circle me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-dark btn-sm rounded-circle me-2"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <form id="contactForm" class="card p-4 border-0 shadow-sm">
+                        <div class="row g-3">
+                            <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre" required></div>
+                            <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div>
+                            <div class="col-12"><select class="form-select">
+                                <option>Pedido Particular</option>
+                                <option>Ventas Mayoristas</option>
+                            </select></div>
+                            <div class="col-12"><textarea class="form-control" rows="4" placeholder="Tu mensaje..." required></textarea></div>
+                            <div class="col-12"><button type="submit" class="btn btn-primary w-100 py-2 fw-bold">ENVIAR</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Preguntas Frecuentes</h2>
+            <div class="accordion mx-auto" id="faqAccordion" style="max-width: 800px;">
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button fw-bold" data-bs-toggle="collapse" data-bs-target="#f1">¿Cuánto demoran?</button></h2>
+                    <div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Entre 24 y 48 horas hábiles una vez confirmado el diseño.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header"><button class="accordion-button collapsed fw-bold" data-bs-toggle="collapse" data-bs-target="#f2">¿Hacen envíos?</button></h2>
+                    <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">Sí, enviamos a todo el país vía Correo Argentino y mensajería en CABA/GBA.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 2026.com.ar - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/TUNUMERO" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mensaje enviado. ¡Gracias por confiar en 2026.com.ar!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
