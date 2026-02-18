@@ -6,6 +6,7 @@
     <title>2026.com.ar | Sellos de Goma Personalizados y Escolares</title>
     <meta name="description" content="Líderes en fabricación de sellos de goma en Argentina. Sellos automáticos para profesionales, sellos de madera y kits escolares personalizados con tinta textil.">
     <meta name="keywords" content="sellos de goma, sellos personalizados, 2026.com.ar, sellos escolares, sellos automáticos, sellos para ropa, sellos buenos aires">
+    
     <link rel="icon" href="images/logo.png" type="image/png">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,10 +29,10 @@
         .hero-container {
             position: relative;
             height: 90vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                        url('images/sellos.jpeg'); /* Imagen de respaldo */
-            background-size: contain;
-            background-repeat: no-repeat;
+            /* Degradado oscuro sobre la imagen para que se lea el texto */
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('images/sellos.jpeg');
+            background-size: cover;
             background-position: center;
             display: flex;
             align-items: center;
@@ -81,6 +82,18 @@
         /* FAQ Estilo */
         .accordion-button:not(.collapsed) { background-color: #e7f1ff; color: var(--primary-blue); }
         .accordion-item { border-radius: 10px !important; margin-bottom: 10px; border: 1px solid #eee; overflow: hidden; }
+
+        /* Corrección Carrusel para Móviles */
+        .carousel-inner { height: 400px; }
+        
+        @media (max-width: 768px) {
+            .carousel-inner { 
+                height: 300px; /* Altura ajustada para celulares */
+            }
+            .hero-container {
+                height: 80vh; /* Un poco más corto en móviles */
+            }
+        }
     </style>
 </head>
 <body>
@@ -88,7 +101,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-                <img src="images/logo.png" alt="Logo 2026" height="30" class="me-2">
+                <img src="images/logo.png" alt="Logo" height="30" class="me-2">
                 2026<span class="text-primary">.COM.AR</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -110,7 +123,6 @@
     <header class="hero-container">
         <div class="container">
             <div class="d-flex align-items-center justify-content-center mb-3">
-                <img src="images/logo.png" alt="Logo 2026" style="height: 80px; width: auto;" class="me-3">
                 <h1 class="hero-title mb-0">Sellos que dejan huella.</h1>
             </div>
             <p class="lead fs-4 mb-4">Especialistas en sellos de goma para empresas y sellos escolares personalizados.</p>
@@ -134,7 +146,7 @@
                         <div class="text-primary mb-3"><i class="fas fa-print fa-3x"></i></div>
                         <h4 class="fw-bold">Sellos Automáticos</h4>
                         <p class="text-muted small">Prácticos y duraderos. El estándar para profesionales y oficinas.</p>
-                        <a href="#" class="btn btn-outline-primary mt-auto">Ver Modelos</a>
+                        <a href="#contacto" class="btn btn-outline-primary mt-auto">Consultar</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -142,7 +154,7 @@
                         <div class="text-warning mb-3"><i class="fas fa-apple-alt fa-3x"></i></div>
                         <h4 class="fw-bold">Sellos Escolares</h4>
                         <p class="text-muted small">¡Identificá todo! Cuadernos, libros y etiquetas con estilo.</p>
-                        <a href="#" class="btn btn-outline-warning mt-auto">Ver Diseños</a>
+                        <a href="#kit-escolar" class="btn btn-outline-warning mt-auto">Ver Diseños</a>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -150,7 +162,7 @@
                         <div class="text-success mb-3"><i class="fas fa-tree fa-3x"></i></div>
                         <h4 class="fw-bold">Sellos de Madera</h4>
                         <p class="text-muted small">El toque artesanal y clásico para eventos o packaging.</p>
-                        <a href="#" class="btn btn-outline-success mt-auto">Ver Medidas</a>
+                        <a href="#contacto" class="btn btn-outline-success mt-auto">Consultar</a>
                     </div>
                 </div>
             </div>
@@ -162,7 +174,7 @@
             <div class="row align-items-center bg-white shadow rounded-4 overflow-hidden mx-0">
                 <div class="col-lg-6 p-0">
                     <div id="carouselKitEscolar" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner" style="height: 400px;">
+                        <div class="carousel-inner">
                             <div class="carousel-item active h-100">
                                 <img src="images/selloescolar.jpeg" class="d-block w-100 h-100" alt="Sello Escolar 1" style="object-fit: cover;">
                             </div>
@@ -191,11 +203,11 @@
                     <h2 class="fw-bold mb-3">Sello escolar 2026</h2>
                     <ul class="list-unstyled mb-4">
                         <li class="mb-2"><i class="fas fa-check text-success me-2"></i> 1 Sello automático personalizado</li>
-                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Tinta al agua</li>
-                        <!-- <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Almohadilla de repuesto incluida</li> -->
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Tinta indeleble para ropa</li>
+                        <li class="mb-2"><i class="fas fa-check text-success me-2"></i> Ideal para uniformes y cuadernos</li>
                     </ul>
                     <a href="https://wa.me/+5491138092992?text=Hola%20quiero%20el%20Kit%20Escolar" class="btn btn-success btn-lg w-100 shadow">
-                        <i class="fab fa-whatsapp me-2"></i> CONSULTAR PRECIO
+                        <i class="fab fa-whatsapp me-2"></i> PEDIR POR WHATSAPP
                     </a>
                 </div>
             </div>
@@ -208,7 +220,6 @@
                 <div class="col-lg-5">
                     <h2 class="fw-bold">Contactanos</h2>
                     <p class="text-muted">Atención personalizada para particulares y empresas.</p>
-                    <!-- <p><i class="fas fa-envelope text-primary me-2"></i> info@2026.com.ar</p> -->
                     <p><i class="fas fa-phone text-primary me-2"></i> +54 9 11 3809-2992</p>
                     <div class="mt-4">
                         <a href="#" class="btn btn-dark btn-sm rounded-circle me-2"><i class="fab fa-instagram"></i></a>
@@ -216,16 +227,36 @@
                     </div>
                 </div>
                 <div class="col-lg-7">
-                    <form id="contactForm" class="card p-4 border-0 shadow-sm">
+                    <form action="https://formspree.io/f/xbdakzel" method="POST" id="contactForm" class="card p-4 border-0 shadow-sm">
+                        
+                        <input type="hidden" name="_language" value="es">
+                        <input type="hidden" name="_subject" value="Nueva consulta desde la web 2026">
+                        
                         <div class="row g-3">
-                            <div class="col-md-6"><input type="text" class="form-control" placeholder="Nombre" required></div>
-                            <div class="col-md-6"><input type="email" class="form-control" placeholder="Email" required></div>
-                            <div class="col-12"><select class="form-select">
-                                <option>Pedido Particular</option>
-                                <option>Ventas Mayoristas</option>
-                            </select></div>
-                            <div class="col-12"><textarea class="form-control" rows="4" placeholder="Tu mensaje..." required></textarea></div>
-                            <div class="col-12"><button type="submit" class="btn btn-primary w-100 py-2 fw-bold">ENVIAR</button></div>
+                            <div class="col-md-6">
+                                <label class="visually-hidden">Nombre</label>
+                                <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="visually-hidden">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="col-12">
+                                <select name="tipo_pedido" class="form-select">
+                                    <option value="Pedido Particular">Pedido Particular</option>
+                                    <option value="Ventas Mayoristas">Ventas Mayoristas</option>
+                                    <option value="Escuelas">Consulta Escolar</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <textarea name="mensaje" class="form-control" rows="4" placeholder="Tu mensaje..." required></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" id="form-button" class="btn btn-primary w-100 py-2 fw-bold">ENVIAR CONSULTA</button>
+                            </div>
+                            <div class="col-12">
+                                <p id="form-status" class="text-center mt-3 fw-bold"></p>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -255,7 +286,7 @@
 
     <footer class="bg-dark text-white py-4 text-center">
         <div class="container">
-            <p class="mb-0">&copy; 2026 2026.com.ar - Todos los derechos reservados.</p>
+            <p class="mb-0">&copy; <span id="year"></span> 2026.com.ar - Todos los derechos reservados.</p>
         </div>
     </footer>
 
@@ -264,12 +295,57 @@
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Mensaje enviado. ¡Gracias por confiar en 2026.com.ar!');
-            this.reset();
-        });
+        // 1. Actualizar año automáticamente
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        // 2. Manejo del formulario Formspree sin recargar la página (AJAX)
+        var form = document.getElementById("contactForm");
+        
+        async function handleSubmit(event) {
+            event.preventDefault(); // Evita que la página se refresque
+            var status = document.getElementById("form-status");
+            var btn = document.getElementById("form-button");
+            var data = new FormData(event.target);
+            
+            // Estado Cargando
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            btn.disabled = true;
+
+            fetch(event.target.action, {
+                method: form.method,
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    status.innerHTML = "¡Gracias! Tu mensaje ha sido enviado correctamente.";
+                    status.className = "text-center mt-3 fw-bold text-success";
+                    form.reset(); // Limpia el formulario
+                    btn.innerHTML = "ENVIAR CONSULTA";
+                    btn.disabled = false;
+                } else {
+                    response.json().then(data => {
+                        if (Object.hasOwn(data, 'errors')) {
+                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                        } else {
+                            status.innerHTML = "Hubo un problema al enviar el mensaje.";
+                        }
+                        status.className = "text-center mt-3 fw-bold text-danger";
+                        btn.innerHTML = "INTENTAR DE NUEVO";
+                        btn.disabled = false;
+                    })
+                }
+            }).catch(error => {
+                status.innerHTML = "Hubo un error de conexión.";
+                status.className = "text-center mt-3 fw-bold text-danger";
+                btn.innerHTML = "INTENTAR DE NUEVO";
+                btn.disabled = false;
+            });
+        }
+        form.addEventListener("submit", handleSubmit);
     </script>
 </body>
 </html>
